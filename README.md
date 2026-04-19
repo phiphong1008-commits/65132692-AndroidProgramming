@@ -1,6 +1,6 @@
 ﻿# 65132692-AndroidProgramming
 Lưu bài thực hành, bài tập, dự án Android
 Các bài tập thực hành 
-<img width="1199" height="660" alt="image" src="https://github.com/user-attachments/assets/5fc58de1-f928-48e0-a3ab-0092b1c274d9" />
+
 
 
