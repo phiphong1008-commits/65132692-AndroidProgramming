@@ -14,6 +14,7 @@ tính diện tích
 
 
 -Chức năng 3
+<img width="388" height="866" alt="image" src="https://github.com/user-attachments/assets/2fe434b1-01d7-4b63-ba3f-d0c7f0516feb" />
 
 -Chức năng 4
 <img width="402" height="864" alt="image" src="https://github.com/user-attachments/assets/ba61de11-49e2-4c21-af13-2677fd1d0ebb" />
