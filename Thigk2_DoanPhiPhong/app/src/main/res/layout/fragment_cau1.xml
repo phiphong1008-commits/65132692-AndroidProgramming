@@ -81,24 +81,27 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="96dp"
-        android:text="Chiều Dài"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="21dp"
+        android:text="Kết quả"
+        app:layout_constraintEnd_toStartOf="@+id/edt_3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_chuvi" />
+
     <EditText
         android:id="@+id/edt_3"
         android:layout_width="242dp"
         android:layout_height="48dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="86dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="49dp"
         android:ems="10"
-        android:hint="Nhập chiều rộng"
+        android:hint="Kết quả ở đây"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/edt_1" />
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/btn_chuvi" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
