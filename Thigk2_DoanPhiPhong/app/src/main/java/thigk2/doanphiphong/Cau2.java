@@ -3,45 +3,32 @@ package thigk2.doanphiphong;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link Cau2#newInstance} factory method to
- * create an instance of this fragment.
- */
+import java.util.ArrayList;
+
+// Lưu ý: Đảm bảo bạn đã copy class LandScape và LandScapeAdapter vào package thigk2.doanphiphong
+// hoặc import chúng đúng cách.
+
 public class Cau2 extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    // Khai báo các biến điều khiển
+    LandScapeAdapter landScapeAdapter; // Sửa lỗi chính tả Apdapter nếu cần
+    ArrayList<LandScape> recycleviewData;
+    RecyclerView recyclerviewLandscape;
 
     public Cau2() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment Cau2.
-     */
-    // TODO: Rename and change types and number of parameters
     public static Cau2 newInstance(String param1, String param2) {
         Cau2 fragment = new Cau2();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
     }
@@ -49,16 +36,37 @@ public class Cau2 extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
+        // Chuẩn bị dữ liệu ở đây
+        recycleviewData = getDataForRecycleView();
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_cau2, container, false);
+        // 1. Inflate layout cho fragment này
+        View view = inflater.inflate(R.layout.fragment_cau2, container, false);
+
+        // 2. Tìm điều khiển RecyclerView thông qua đối tượng view
+        recyclerviewLandscape = view.findViewById(R.id.recycle_view);
+
+        // 3. Thiết lập LayoutManager
+        // Trong Fragment, ta dùng getContext() thay cho "this"
+        RecyclerView.LayoutManager layoutLinear = new LinearLayoutManager(getContext());
+        recyclerviewLandscape.setLayoutManager(layoutLinear);
+
+        // 4. Thiết lập Adapter
+        landScapeAdapter = new LandScapeAdapter(getContext(), recycleviewData);
+        recyclerviewLandscape.setAdapter(landScapeAdapter);
+
+        return view;
+    }
+
+    // Hàm tạo dữ liệu mẫu
+    ArrayList<LandScape> getDataForRecycleView(){
+        ArrayList<LandScape> dsdulieu = new ArrayList<LandScape>();
+        dsdulieu.add(new LandScape("thaptramhuong","Tháp Trầm Hương"));
+        dsdulieu.add(new LandScape("halongbay","Vịnh Hạ Long"));
+        dsdulieu.add(new LandScape("kimtuthap","Kim tự tháp Ai Cập"));
+        return dsdulieu;
     }
 }

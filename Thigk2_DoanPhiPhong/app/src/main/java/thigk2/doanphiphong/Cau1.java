@@ -94,7 +94,7 @@ public class Cau1 extends Fragment {
                 ketQua = dai * rong;
             }
 
-            
+
             edtKetQua.setText(String.valueOf(ketQua));
 
         } catch (NumberFormatException e) {
