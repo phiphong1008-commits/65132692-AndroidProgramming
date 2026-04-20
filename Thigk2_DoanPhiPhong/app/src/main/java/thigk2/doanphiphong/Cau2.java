@@ -64,7 +64,7 @@ public class Cau2 extends Fragment {
     // Hàm tạo dữ liệu mẫu
     ArrayList<LandScape> getDataForRecycleView(){
         ArrayList<LandScape> dsdulieu = new ArrayList<LandScape>();
-        dsdulieu.add(new LandScape("thaptramhuong","Tháp Trầm Hương"));
+        dsdulieu.add(new LandScape("thaptramhuong","Doan Phi Phong"));
         dsdulieu.add(new LandScape("halongbay","Vịnh Hạ Long"));
         dsdulieu.add(new LandScape("kimtuthap","Kim tự tháp Ai Cập"));
         dsdulieu.add(new LandScape("saigon", "Dinh Độc Lập - TP. Hồ Chí Minh"));
