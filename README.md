@@ -10,11 +10,14 @@ tính chu vi
 tính diện tích
 <img width="391" height="863" alt="image" src="https://github.com/user-attachments/assets/760cfb04-20bf-4a0d-a67a-973a1f2f9bb2" />
 -Chức năgn 2
-<img width="395" height="875" alt="image" src="https://github.com/user-attachments/assets/25588173-c612-49cc-9b2a-e009dc60e36a" />
+<img width="397" height="866" alt="image" src="https://github.com/user-attachments/assets/3c9e721b-7018-480e-bf02-d19655ec31c2" />
+
 
 -Chức năng 3
 
 -Chức năng 4
+<img width="402" height="864" alt="image" src="https://github.com/user-attachments/assets/ba61de11-49e2-4c21-af13-2677fd1d0ebb" />
+
 
 
 
