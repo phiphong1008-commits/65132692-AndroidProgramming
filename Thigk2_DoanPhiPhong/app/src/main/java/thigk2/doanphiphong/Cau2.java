@@ -67,6 +67,13 @@ public class Cau2 extends Fragment {
         dsdulieu.add(new LandScape("thaptramhuong","Tháp Trầm Hương"));
         dsdulieu.add(new LandScape("halongbay","Vịnh Hạ Long"));
         dsdulieu.add(new LandScape("kimtuthap","Kim tự tháp Ai Cập"));
+        dsdulieu.add(new LandScape("saigon", "Dinh Độc Lập - TP. Hồ Chí Minh"));
+        dsdulieu.add(new LandScape("angiang", "Rừng tràm Trà Sư - An Giang"));
+        dsdulieu.add(new LandScape("nuthan", "Tượng Nữ thần Tự do - Mỹ"));
+        dsdulieu.add(new LandScape("opera", "Nhà hát Opera Sydney - Úc"));
+        dsdulieu.add(new LandScape("hoian", "Phố cổ Hội An - Quảng Nam"));
+        dsdulieu.add(new LandScape("sapa", "Ruộng bậc thang Sapa - Lào Cai"));
+        dsdulieu.add(new LandScape("danang", "Cầu Vàng Bà Nà Hills - Đà Nẵng"));
         return dsdulieu;
     }
 }
