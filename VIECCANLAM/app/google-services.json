@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "1064869803453",
+    "firebase_url": "https://bthvcl-default-rtdb.firebaseio.com",
+    "project_id": "bthvcl",
+    "storage_bucket": "bthvcl.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1064869803453:android:3d56c60555d4721f25ced4",
+        "android_client_info": {
+          "package_name": "dpphong.ntu.app_vcl"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjyOJ65quPVmvzTRL_HXqm9JaxhtwdZAk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1064869803453:android:ce016a56651f8e6325ced4",
+        "android_client_info": {
+          "package_name": "dpphong.ntu.vieccanlam"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjyOJ65quPVmvzTRL_HXqm9JaxhtwdZAk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
